@@ -7,7 +7,6 @@
     "url": "https://github.com/arturonavarro234/v-shared-components.git"
   },
   "version": "0.1.0",
-  "private": true,
   "scripts": {
     "build-storybook": "build-storybook -s public",
     "clean": "rimraf dist",
@@ -51,5 +50,6 @@
     "react-dom": "^16.13.1",
     "react-is": "^16.13.1",
     "react-scripts": "3.4.3"
-  }
+  },
+  "publishConfig": { "registry": "https://npm.pkg.github.com/" }
 }
