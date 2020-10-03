@@ -1,5 +1,5 @@
 {
-  "name": "v-shared-components",
+  "name": "@arturonavarro234/v-shared-components",
   "main": "dist/index.js",
   "files": [ "dist", "README.md" ],
   "repository": {
