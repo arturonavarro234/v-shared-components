@@ -1,7 +1,10 @@
 {
   "name": "@arturonavarro234/v-shared-components",
   "main": "dist/index.js",
-  "files": [ "dist", "README.md" ],
+  "files": [
+    "dist",
+    "README.md"
+  ],
   "repository": {
     "type": "git",
     "url": "https://github.com/arturonavarro234/v-shared-components.git"
@@ -12,7 +15,7 @@
     "clean": "rimraf dist",
     "compile": "npm run clean && cross-env NODE_ENV=production babel src/components --out-dir dist --copy-files --ignore __tests__,spec.js,test.js,stories.js,__snapshots__",
     "eject": "react-scripts eject",
-    "storybook": "start-storybook -p 6006 -s public",
+    "start": "start-storybook -p 6006 -s public",
     "test": "react-scripts test"
   },
   "eslintConfig": {
@@ -33,8 +36,11 @@
   "devDependencies": {
     "@babel/cli": "^7.11.6",
     "@babel/core": "^7.11.6",
+    "@babel/helper-call-delegate": "^7.11.4",
     "@babel/preset-env": "^7.11.5",
     "@babel/preset-react": "^7.10.4",
+    "@material-ui/core": "^4.4.2",
+    "@material-ui/icons": "^4.9.1",
     "@storybook/addon-actions": "^6.0.22",
     "@storybook/addon-essentials": "^6.0.22",
     "@storybook/addon-links": "^6.0.22",
@@ -46,10 +52,18 @@
     "@testing-library/user-event": "^7.1.2",
     "babel-loader": "^8.1.0",
     "cross-env": "^7.0.2",
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1",
+    "react": "^16.9.0",
+    "react-dom": "^16.8.6",
     "react-is": "^16.13.1",
     "react-scripts": "3.4.3"
   },
-  "publishConfig": { "registry": "https://npm.pkg.github.com/" }
+  "peerDependencies": {
+    "@material-ui/core": "^4.4.2",
+    "@material-ui/icons": "^4.9.1",
+    "react": "^16.9.0",
+    "react-dom": "^16.8.6"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  }
 }
